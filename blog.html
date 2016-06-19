@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Mark Mwaura</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    <link href='https://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="primary-header container group">
+
+        <h1 class="logo">
+        <a href="index.html">Mark <br> Mwaura</a>
+      </h1>
+        <nav class="nav primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!--
+    -->
+                <li><a href="index.html#about">About</a></li>
+                <!--
+    -->
+                <li><a href="#index.htmlportfolio">Portfolio</a></li>
+                <!--
+    -->
+                <li><a href="index.html#contact">Contact</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero container">
+        <img src="images/geekboy.jpg" width="100%" height="auto" />
+    </section>
+
+    <section class="grid">
+
+        <section class="blocks">
+            <a href="">
+
+                <h3 id="about">How Browsers Work</h3>
+                <br>
+            </a>
+            <p>
+                How Browsers Work
+                <br> There are several browsers used on both desktop and mobile device today. These include: *Chrome *Firefox *safari *Opera<b>
+
+Main function of a browser
+<br>
+The main function of a browser is to present the web resource you choose, by requesting it from the server and displaying it in the browser window. The resource is usually an HTML document, but may also be a PDF, image, or some other type of content. The location of the resource is specified by the user using a URI (Uniform Resource Identifier
+<br>
+Common User interface elements of a Browser
+<br>
+Home button that takes you to your home page
+<br>
+Bookmarking Options
+<br>
+Back and Forward buttons
+<br>
+Address Bar for inserting URI
+<br>
+Refresh and Stop butoons for refreshing or stopping the loading of current pages/documents
+<br>
+The browsers high level structure
+The browsers main components are :
+<br>
+1.The User Inteface : This includes the address bar, back/forward button, bookmarking menu, etc. Every part of the browser display except the window where you see the requested page.
+<br>
+2.The Browser Engine : It manages actions between the UI and the rendering engine.
+<br>
+3.The Rendering Engine: This is responsible for displaying requested content content.For example if the requested content is HTML, the rendering engine parses HTML and CSS, and displays the parsed content on the screen.
+<br>
+Different browsers use different rendering engines: Internet Explorer uses Trident, Firefox uses Gecko, Safari uses WebKit. Chrome and Opera (from version 15) use Blink, a fork of WebKit(an open source rendering engine which started as an engine for the Linux platform and was modified by Apple to support Mac and Windows).
+<br>
+The main Flow
+<br>
+The rendering engine will start getting the contents of the requested document from the networking layer. This will usually be done in 8kB chunks.The rendering engine will start parsing the HTML document and convert elements to DOM nodes in a tree called the "content tree". The engine will parse the style data, both in external CSS files and in style elements. Styling information together with visual instructions in the HTML will be used to create another tree: the render tree.
+<br>
+The render tree contains rectangles with visual attributes like color and dimensions. The rectangles are in the right order to be displayed on the screen.
+<br>
+After the construction of the render tree it goes through a "layout" process. This means giving each node the exact coordinates where it should appear on the screen. The next stage is painting–the render tree will be traversed and each node will be painted using the UI backend layer.
+<br>
+It's important to understand that this is a gradual process. For better user experience, the rendering engine will try to display contents on the screen as soon as possible. It will not wait until all HTML is parsed before starting to build and layout the render tree. Parts of the content will be parsed and displayed, while the process continues with the rest of the contents that keeps coming from the network.
+<br>
+4.Networking: This is responsible for network calls such as HTTP requests, using different implementations for different platform behind a platform independent interface.
+<br>
+5.UI backend: This is used for drawing basic widgets like combo boxes and windows. This backend exposes a generic interface that is not platform specific. Underneath it uses operating system user interface methods.
+<br>
+6.Javascript Interpreter:Used to parse and execute javascript code.
+<br>
+7.Data storage: This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies. Browsers also support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.
+<br>
+It is important to note that browsers such as Chrome run multiple instances of the rendering engine: one for each tab. Each tab runs in a separate process.
+            
+            </p>
+
+            <a href="">
+
+                <h3 id="about">CodeWars</h3>
+            </a>
+            <p>Codewars is a collective effort by its users. They are creators - authoring kata to teach various techniques, solving kata with solutions that enlighten others, and commenting with constructive feedback. Kata
+                <br>
+In our dojo, kata are real code challenges focused on improving skill and technique. Some train programming fundamentals, while others focus on complex problem solving. Each kata is crafted for and by the community.<br>
+
+Kyu/Dan Ranks<br>
+Each kata on the site is set to a Kyu/Dan rank, based on its subject area and difficulty. The community collectively determines rank in the Beta Process.<br>
+
+Earning Ranks<br>
+You can advance through the ranks by completing kata at or above your rank - the harder the kata the faster you advance.
+<br>
+Honor<br>
+Honor represents the level of respect a user has earned from the community, based on their skill and contributions. Honor is earned fastest through creating kata, crafting great solutions, and constructive comments.<br>
+            </p>
+
+            <a href="">
+
+                <h3 >Front End Website Development</h3>
+            </a>
+            <p>
+<br>
+Front-end Web Development<br>
+<br>
+Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or web application so that a user can see and interact with them directly. There are so many tutorials and guides on how to be a front end developer but so far I have used ShayHowe’s Web Development. For Beginners it is a really good tutorial as it takes you through step by step. However, with every task comes challenges and Front end development is not shy of them. You can customize the look and feel of your website using CSS.<br>
+<br>
+HTML pages are then styled and the text and images made more appealing using CSS - Cascading Style Sheets (CSS) which is a style sheet language used to describe the presentation of a document written in HTML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media<br>
+To start learning Front end development you first must learn HTMl - HyperText Markup Language, commonly abbreviated as HTML, is the standard markup language used to create web pages. HTML is a cornerstone technology used to create web pages, as well as to create user interfaces for mobile and web applications. Web browsers can read HTML files and render them into visible or audible web pages. HTML describes the structure of a website semantically.
+<br>
+The two languages—HTML and CSS—are independent of one another and should remain that way. CSS should not be written inside of an HTML document and vice versa. As a rule, HTML will always represent content, and CSS will always represent the appearance of that content.<br>
+
+To be a great Front End Web Developer you must have masterly of both CSS and HTML you can build very powerful and nicely looking websites.</p><br>
+
+            <a href="">
+
+                <h3 id="about">Object Oriented Programming</h3>
+            </a><br>
+            <p>Object-oriented programming (OOP) is a programming language model organized around objects rather than "actions" and data rather than logic. Historically, a program has been viewed as a logical procedure that takes input data, processes it, and produces output data.<br>
+            
+            The first step in OOP is to identify all the objects the programmer wants to manipulate and how they relate to each other, an exercise often known as data modeling. Once an object has been identified,  it is generalized as a class of objects (think of Plato's concept of the "ideal" chair that stands for all chairs) which defines the kind of data it contains and any logic sequences that can manipulate it. Each distinct logic sequence is known as a method. Objects communicate with well-defined interfaces called messages.<br>
+
+The concepts and rules used in object-oriented programming provide these important benefits:<br>
+
+The concept of a data class makes it possible to define subclasses of data objects that share some or all of the main class characteristics. Called inheritance, this property of OOP forces a more thorough data analysis, reduces development time, and ensures more accurate coding.
+Since a class defines only the data it needs to be concerned with, when an instance of that class (an object) is run, the code will not be able to accidentally access other program data. This characteristic of data hiding provides greater system security and avoids unintended data corruption.
+The definition of a class is reuseable not only by the program for which it is initially created but also by other object-oriented programs (and, for this reason, can be more easily distributed for use in networks).<br>
+
+            </p>
+
+            <a href="">
+
+                <h3 id="about">Github - What Is GitHub ?</h3>
+            </a>
+            <p>GitHub is a website/service that we hear geeks rave about all the time, yet a lot of people don’t really understand what it does. 
+            <br>Git is an open-source version control system that was started by Linus Trovalds – the same person who created Linux. Git is similar to other version control systems – Subversion, CVS, and Mercurial to name a few.<br>
+            Version control systems keep these revisions straight, and store the modifications in a central repository. This allows developers to easily collaborate, as they can download a new version of the software, make changes, and upload the newest revision. Every developer can see these new changes, download them, and contribute.
+<br>
+Similarly, people who have nothing to do with the development of a project can still download the files and use them. Most Linux users should be familiar with this process, as using Git, Subversion, or some other similar method is pretty common for downloading needed files, especially in preparation for compiling a program from source code
+            <br>
+            Forking a repo
+<br>
+“Forking” is when you create a new project based off of another project that already exists. This is an amazing feature that vastly encourages the further development of programs and other projects. If you find a project on GitHub that you’d like to contribute to, you can fork the repo, make the changes you’d like, and release the revised project as a new repo. If the original repository that you forked to create your new project gets updated, you can easily add those updates to your current fork.
+<br>
+Pull requests
+<br>
+You fork a repository, make a great revision to the project, and want it to be recognized by the original developers, maybe even included in the official project/repository. You can do so by creating a pull request, so the authors of the original repository can see your work, and then choose whether or not to accept it into the official project. Whenever you issue a pull request, GitHub provides a perfect medium for you and the project’s maintainer to communicate.</p>
+
+          
+        </section>
+
+
+
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="primary-footer container group">
+
+        <small>&copy; Mark Mwaura</small>
+
+        <nav class="nav">
+            <a href="#">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#portfolio">Portfolio</a> |
+            <a href="#contact">Contact</a> |
+            <a href="https://github.com/Markmwaura">Github</a> |
+            <a href="http://twitter.com/markmwaura_">Twitter</a> |
+            <a href="mailto:markkmwaura@gmail.com">Email</a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
